@@ -13,8 +13,27 @@ class _JourState extends State<Jour> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Text(
-            "ajaj"
+          child: Column(
+            children: [
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.green,
+                ),
+              ),
+              Expanded(
+                flex: 6,
+                child: Container(
+                  color: Colors.blue,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.red,
+                ),
+              )
+            ],
           ),
       ),
     );
