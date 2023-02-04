@@ -1,6 +1,9 @@
 body{
-    background-color :red;
+    background-color :BlanchedAlmond;
 }
 h1{
     color:black;
+}
+table{
+    font-size: 3;
 }
