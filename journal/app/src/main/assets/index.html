@@ -1,30 +1,51 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+</style>
     </head>
     <body>
-    <h1>Informations pour le 5 février 2023</h1>
-    <h2>
-        <p>Déjeuner:</p>
-        <input type="text" id="textDejeuner" size="10">
-    </h2>
-    <h2>
-        <p>Dîner:</p>
-        <input type="text" id="textDiner" size="10">
-    </h2>
-    <h2>
-        <p>Souper:</p>
-        <input type="text" id="textSouper">
-    </h2>
-    <h2>
-        <p>Collations:</p>
-        <input type="text" id="textCollations">
-    </h2>
-    <h2>
 
-    </h2>
+    <form action="calendar.html" onsubmit="return authenticate()">
+        <label for="username">Nom d'utilisateur</label> <br>
+        <!-- added IDs to the inputs -->
+        <input
+                id="username"
+                type="text"
+                placeholder="Entrer un nom d'utilisateur"
+                name="username"
+                required
+        /> <br>
+        <label for="password">Mot de passe</label> <br>
+        <input
+                id="password"
+                type="password"
+                placeholder="Entrer le mot de passe"
+                name="password"
+                required
+        /> <br>
+        <button type="submit">Soumettre</button>
+    </form>
 
-        <a href="calendar.html"><button>HOME</button></a>
+    <script src="script.js"></script>
+
+    <script>
+      function authenticate(){
+        var authorised;
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if(username == "abcd" && password == "pass12345"){
+          authorised = true;
+        }else{
+          authorised = false;
+          alert("Mot de passe non valide");
+        }
+        return authorised;
+      }
+    </script>
+
+
     </body>
 </html>
