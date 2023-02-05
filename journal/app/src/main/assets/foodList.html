@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = fr>
+<head>
+    <title> Nourriture </title>
+    <link href = "style.css">
+</head>
+<style>
+    .save {
+        top:90%;
+        left:55%;
+        width:100px;
+        height:40px;
+        position: absolute;
+    }
+
+</style>
+<body>
+    <script src="script.js"></script>
+    <button class="retour" onclick="load_()"> Retour </button>
+    <div class="Dejeuner">
+        <h2>Dejeuner</h2>
+        <input type="text" id="Dejeuner">
+        <br>
+        <input type="checkbox" id="glutendejeuner" name="gluten">
+        <label for="gluten">gluten</label>
+        <input type="checkbox" id="lactosedejeuner" name="lactose">
+        <label for="lactose">lactose</label>
+        <input type="checkbox" id="viandedejeuner" name="viande">
+        <label for="viande">viande</label>
+        <input type="checkbox" id="cafeinedejeuner" name="cafeine">
+        <label for="cafeine">cafeine</label>
+        <input type="checkbox" id="legumineusedejeuner" name="legumineuse">
+        <label for="legumineuse">legumineuse</label>
+    </div>
+    <div class="Diner">
+        <h2>Diner</h2>
+        <input type="text">
+        <br>
+        <input type="checkbox" id="glutendiner" name="gluten">
+        <label for="gluten">gluten</label>
+        <input type="checkbox" id="lactosediner" name="lactose">
+        <label for="lactose">lactose</label>
+        <input type="checkbox" id="viandediner" name="viande">
+        <label for="viande">viande</label>
+        <input type="checkbox" id="cafeinediner" name="cafeine">
+        <label for="cafeine">cafeine</label>
+        <input type="checkbox" id="legumineusediner" name="legumineuse">
+        <label for="legumineuse">legumineuse</label>
+    </div>
+    <div class="Souper">
+        <h2>Souper</h2>
+        <input type="text">
+        <br>
+        <input type="checkbox" id="glutensouper" name="gluten">
+        <label for="gluten">gluten</label>
+        <input type="checkbox" id="lactosesouper" name="lactose">
+        <label for="lactose">lactose</label>
+        <input type="checkbox" id="viandesouper" name="viande">
+        <label for="viande">viande</label>
+        <input type="checkbox" id="cafeinesouper" name="cafeine">
+        <label for="cafeine">cafeine</label>
+        <input type="checkbox" id="legumineusesouper" name="legumineuse">
+        <label for="legumineuse">legumineuse</label>
+    </div>
+    <div class="Collations">
+        <h2>Collations</h2>
+        <input type="text">
+        <br>
+        <input type="checkbox" id="glutencollation" name="gluten">
+        <label for="gluten">gluten</label>
+        <input type="checkbox" id="lactosecollation" name="lactose">
+        <label for="lactose">lactose</label>
+        <input type="checkbox" id="viandecollation" name="viande">
+        <label for="viande">viande</label>
+        <input type="checkbox" id="cafeinecollation" name="cafeine">
+        <label for="cafeine">cafeine</label>
+        <input type="checkbox" id="legumineusecollation" name="legumineuse">
+        <label for="legumineuse">legumineuse</label>
+    </div>
+    <button class="save" onclick="saveNourriture()"> Sauvegarder </button>
+</body>
+</html>
